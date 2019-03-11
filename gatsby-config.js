@@ -1,3 +1,62 @@
+ const gatsby_plugin_feed = 
+ {
+   resolve: `gatsby-plugin-feed`,
+   options: {
+     query: `
+       {
+         site {
+           siteMetadata {
+             title
+             description
+             siteUrl
+             site_url: siteUrl
+           }
+         }
+       }
+     `,
+     feeds: [
+       {
+         serialize: ({ query: { site, allMarkdownRemark } }) => {
+           return allMarkdownRemark.edges.map(edge => {
+             return Object.assign({}, edge.node.frontmatter, {
+               description: edge.node.excerpt,
+               date: edge.node.fields.date,
+               url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+               guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+               custom_elements: [{ "content:encoded": edge.node.html }],
+             })
+           })
+         },
+         query: `
+           {
+             allMarkdownRemark(
+               limit: 1000,
+               sort: { order: DESC, fields: [fields___date] }
+             ) {
+               edges {
+                 node {
+                   excerpt
+                   html
+                   fields { 
+                     slug 
+                     date
+                   }
+                   frontmatter {
+                     title
+                     
+                   }
+                 }
+               }
+             }
+           }
+         `,
+         output: "/rss.xml",
+         title: "Gatsby RSS Feed",
+       },
+     ],
+   },
+ }
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,
@@ -53,7 +112,7 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-feed`,
+    gatsby_plugin_feed,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -76,3 +135,4 @@ module.exports = {
     },
   ],
 }
+

@@ -65,7 +65,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       /^\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
     )
     
-    console.log(categories)
     // // create a new slug concatenating everything
     // const slug = `/${categories}/${title}/`
     const slug = `/${title}/`
