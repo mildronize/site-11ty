@@ -9,13 +9,14 @@ exports.createPages = ({ graphql, actions }) => {
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { fields: [fields___date], order: DESC }
           limit: 1000
         ) {
           edges {
             node {
               fields {
                 slug
+                date
               }
               frontmatter {
                 title
@@ -56,11 +57,21 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
+    const filename = createFilePath({ node, getNode })
+    const { categories } = node.frontmatter
+
+    // get the date and title from the file name
+    const [, date, title] = filename.match(
+      /^\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
+    )
+    
+    console.log(categories)
+    // // create a new slug concatenating everything
+    const slug = `/${categories}/${title}/`
+
+    createNodeField({ node, name: `slug`, value: slug })
+    createNodeField({ node, name: `date`, value: new Date(date) })
   }
+
 }
+

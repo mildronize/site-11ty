@@ -32,7 +32,7 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>{node.fields.date}</small>
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
@@ -55,15 +55,15 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
       edges {
         node {
           excerpt
           fields {
             slug
+            date(formatString: "MMMM DD, YYYY")
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
             description
           }
