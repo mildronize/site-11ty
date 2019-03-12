@@ -58,7 +58,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const filename = createFilePath({ node, getNode })
-    // const { categories } = node.frontmatter
+    const { categories } = node.frontmatter
 
     // get the date and title from the file name
     const [, date, title] = filename.match(
@@ -66,8 +66,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     )
     
     // // create a new slug concatenating everything
-    // const slug = `/${categories}/${title}/`
-    const slug = `/${title}/`
+    const slug = `/${categories}/${title}/`
 
     createNodeField({ node, name: `slug`, value: slug })
     createNodeField({ node, name: `date`, value: new Date(date) })
