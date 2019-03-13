@@ -19,13 +19,14 @@
     "gatsby-plugin-typography": "^2.2.8",
     "gatsby-remark-copy-linked-files": "^2.0.9",
     "gatsby-remark-images": "^2.0.6",
-    "gatsby-remark-prismjs": "^3.2.4",
+    "gatsby-remark-prismjs": "^3.2.5",
     "gatsby-remark-responsive-iframe": "^2.0.9",
     "gatsby-remark-smartypants": "^2.0.8",
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-source-firebase": "^1.0.0",
-    "gatsby-transformer-remark": "^2.3.1",
+    "gatsby-transformer-remark": "^2.3.2",
     "gatsby-transformer-sharp": "^2.1.15",
+    "gray-percentage": "^2.0.0",
     "json2yaml": "^1.1.0",
     "prismjs": "^1.15.0",
     "react": "^16.8.4",
@@ -35,7 +36,8 @@
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
     "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-breakpoint-constants": "^0.16.19",
+    "typography-theme-alton": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
