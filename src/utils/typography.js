@@ -1,11 +1,11 @@
 import Typography from "typography"
-import theme from 'typography-theme-alton'
-import gray from 'gray-percentage';
-import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants';
+import theme from "typography-theme-alton"
+import gray from "gray-percentage"
+import { MOBILE_MEDIA_QUERY } from "typography-breakpoint-constants"
 
 // delete altonTheme.googleFonts
 
-theme.baseFontSize = '16px';
+theme.baseFontSize = "16px"
 theme.googleFonts = [
   {
     name: "Prompt",
@@ -16,11 +16,11 @@ theme.googleFonts = [
     styles: ["400", "400i", "700", "700i"],
   },
 ]
-theme.headerFontFamily =  ["Prompt", "sans-serif"]
-theme.overrideStyles = ({ adjustFontSizeTo, scale, rhythm }, options) => ({ 
+theme.headerFontFamily = ["Prompt", "sans-serif"]
+theme.overrideStyles = ({ adjustFontSizeTo, scale, rhythm }, options) => ({
   "h1,h2,h3,h4,h5,h6": {
     lineHeight: 1.1,
-    marginTop: rhythm(1/2)
+    marginTop: rhythm(1 / 2),
   },
   a: {
     color: "#333",
@@ -29,8 +29,8 @@ theme.overrideStyles = ({ adjustFontSizeTo, scale, rhythm }, options) => ({
   "a:hover,a:active": {
     color: options.bodyColor,
   },
-  "p img" : {
-    marginTop: rhythm(3/4)
+  "p img": {
+    marginTop: rhythm(3 / 4),
   },
   blockquote: {
     ...scale(1 / 5),
@@ -41,7 +41,6 @@ theme.overrideStyles = ({ adjustFontSizeTo, scale, rhythm }, options) => ({
     marginTop: rhythm(1),
     marginBottom: rhythm(1),
     borderLeft: `${rhythm(3 / 16)} solid ${gray(10)}`,
-    
   },
   "blockquote > :last-child": {
     marginBottom: 0,
@@ -63,12 +62,10 @@ theme.overrideStyles = ({ adjustFontSizeTo, scale, rhythm }, options) => ({
       marginRight: 0,
       paddingLeft: rhythm(9 / 16),
     },
-  }
+  },
 })
 
 const typography = new Typography(theme)
-
-
 
 // const typography = new Typography({
 //   baseFontSize: '18px',

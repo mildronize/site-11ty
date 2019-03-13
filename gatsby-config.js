@@ -62,48 +62,48 @@
 const fs = require("fs");
 const yaml = require('json2yaml');
 
-const gatsby_source_firbase =  {
-      resolve: `gatsby-source-firebase`,
-      options: {
-        // point to the firebase private key downloaded
-        credential: require("./firebase-key.json"),
+// const gatsby_source_firbase =  {
+//       resolve: `gatsby-source-firebase`,
+//       options: {
+//         // point to the firebase private key downloaded
+//         credential: require("./firebase-key.json"),
 
-        // your firebase database root url
-        databaseURL: "https://mildronize-blog.firebaseio.com/",
+//         // your firebase database root url
+//         databaseURL: "https://mildronize-blog.firebaseio.com/",
 
-        // you can have multiple "types" that point to different paths
-        types: [
-          {
-            // this type will become `allWorkshop` in graphql
-            type: "Post",
-            path: "/posts",
+//         // you can have multiple "types" that point to different paths
+//         types: [
+//           {
+//             // this type will become `allWorkshop` in graphql
+//             type: "Post",
+//             path: "/posts",
 
-            map: node => {
-              console.log("Debug: ")
-              console.log(node)
-              const date = node.frontmatter.date
-              const title = node.frontmatter.title
-              const markdown = node.markdown
-              const slug = node.frontmatter.slug;
+//             map: node => {
+//               console.log("Debug: ")
+//               console.log(node)
+//               const date = node.frontmatter.date
+//               const title = node.frontmatter.title
+//               const markdown = node.markdown
+//               const slug = node.frontmatter.slug;
 
-              ymlText = yaml.stringify(node.frontmatter);
+//               ymlText = yaml.stringify(node.frontmatter);
 
-              const content = `${ymlText}---\n\n${markdown}`
+//               const content = `${ymlText}---\n\n${markdown}`
 
-              try {
-                const data = fs.writeFileSync(`${__dirname}/content/tmp/${date}-${title}.md`, content)
-                //file written successfully
-              } catch (err) {
-                console.error(err)
-              }
+//               try {
+//                 const data = fs.writeFileSync(`${__dirname}/content/tmp/${date}-${title}.md`, content)
+//                 //file written successfully
+//               } catch (err) {
+//                 console.error(err)
+//               }
 
-              // finally, return the node
-              return node
-            },
-          }
-        ]
-      }
-    }
+//               // finally, return the node
+//               return node
+//             },
+//           }
+//         ]
+//       }
+//     }
 
 const gatsby_remark_prismjs = {
   resolve: `gatsby-remark-prismjs`,
