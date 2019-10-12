@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
   // Move images to dist folder without processing
   eleventyConfig.addPassthroughCopy({ "src/template/images": "images" });
+  eleventyConfig.addPassthroughCopy("src/static");
   // Move images from posts to dist folder without processing to `images/posts` folder
   // eleventyConfig.addPassthroughCopy({ "src/posts/**/*.png": "images/posts" });
   // eleventyConfig.addPassthroughCopy({ "src/posts/**/*.jpg": "images/posts" });
@@ -58,7 +59,7 @@ module.exports = function(eleventyConfig) {
   return {
     dir: { input: 'src', output: 'dist', data: '_data', includes: "template/_includes" },
     passthroughFileCopy: true,
-    templateFormats: ['njk', 'md', 'css', 'html', 'yml', 'gif','png','jpg'],
+    templateFormats: ['njk', 'md', 'css', 'html', 'yml'],
     htmlTemplateEngine: 'njk'
   }
 }
