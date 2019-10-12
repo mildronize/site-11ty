@@ -7,10 +7,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
   // Move images to dist folder without processing
-  eleventyConfig.addPassthroughCopy({ "src/template/images": "images" });
+  eleventyConfig.addPassthroughCopy({ "src/_template/images": "images" });
   eleventyConfig.addPassthroughCopy("src/static");
   // Alias `layouts/post.njk` to `post`
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
@@ -53,9 +54,10 @@ module.exports = function(eleventyConfig) {
    /* End Markdown Plugins */
 
   return {
-    dir: { input: 'src', output: 'dist', data: '_data', includes: "template/_includes" },
+    dir: { input: 'src', output: 'dist', data: '_data', includes: "_template/_includes" },
     passthroughFileCopy: true,
     templateFormats: ['njk', 'md', 'css', 'html', 'yml'],
-    htmlTemplateEngine: 'njk'
+    htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: 'njk',
   }
 }

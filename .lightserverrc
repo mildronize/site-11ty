@@ -5,11 +5,11 @@
  "delay": 100,
  "quiet": true,
  "watchexps": [
-    "src/template/scripts/**/*.js # npm run scripts:dev",
-    "src/template/styles/**/*.scss # npm run styles:dev # reloadcss",
+    "src/_template/scripts/**/*.js # npm run scripts:dev",
+    "src/_template/styles/**/*.scss # npm run styles:dev # reloadcss",
     "src/static/",
     "dist/**/*.html",
-    "src/template/images/"
+    "src/_template/images/"
  ],
  "http2": false,
  "open": false

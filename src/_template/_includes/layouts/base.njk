@@ -10,9 +10,16 @@
   <title>{{ renderData.title or title or metadata.title }}</title>
   <link rel="stylesheet" href="/styles/index.css">
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+  <!-- Icons -->
+  <link rel="icon" href="/images/favicon.png">
 </head>
 <body id="top" itemscope itemtype="http://schema.org/WebPage">
+  {% include "layouts/header.njk" %}
+  
+  <div class="container">
   {{ content | safe }}
+  </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
