@@ -28,6 +28,6 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Layout", name: "layout", widget: "page" }
+      - { label: "Layout", name: "layout", widget: "string", default: "base"}
       - { label: "Permalink", name: "permalink", widget: "string",  default: "/{{ title | slug }}/index.html" }
       - { label: "Body", name: "body", widget: "markdown" }
