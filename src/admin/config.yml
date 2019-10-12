@@ -21,15 +21,13 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
   # Our pages e.g. About
-  # - name: "pages"
-  #   label: "Page"
-  #   folder: "pages"
-  #   create: false # Change to true to allow editors to create new pages
-  #   slug: "{{slug}}"
-  #   fields:
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Publish Date", name: "date", widget: "datetime" }
-  #     - { label: "Permalink", name: "permalink", widget: "string" }
-  #     - { label: "Navigation Title", name: "navtitle", widget: "string" }
-  #     - { label: "Tags", name: "tags", widget: "hidden", default: "nav" }
-  #     - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Page"
+    folder: "src/page"
+    create: true # Change to true to allow editors to create new pages
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "page" }
+      - { label: "Permalink", name: "permalink", widget: "string",  default: "/{{ title | slug }}/index.html" }
+      - { label: "Body", name: "body", widget: "markdown" }
