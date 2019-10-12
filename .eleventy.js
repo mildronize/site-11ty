@@ -9,10 +9,6 @@ module.exports = function(eleventyConfig) {
   // Move images to dist folder without processing
   eleventyConfig.addPassthroughCopy({ "src/template/images": "images" });
   eleventyConfig.addPassthroughCopy("src/static");
-  // Move images from posts to dist folder without processing to `images/posts` folder
-  // eleventyConfig.addPassthroughCopy({ "src/posts/**/*.png": "images/posts" });
-  // eleventyConfig.addPassthroughCopy({ "src/posts/**/*.jpg": "images/posts" });
-  // eleventyConfig.addPassthroughCopy({ "src/posts/**/*.gif": "images/posts" });
   // Alias `layouts/post.njk` to `post`
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
