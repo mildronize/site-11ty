@@ -4,6 +4,8 @@ title: Resume
 permalink: /{{ title | slug }}/index.html
 ---
 
+<h1>Resume</h1>
+
 <div class="row resume-summary">
   <div class="col resume-profile-col">
     <div style="margin: 0 auto; width: 200px" class="resume-profile">

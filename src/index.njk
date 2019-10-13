@@ -4,30 +4,15 @@ title: Mildronize
 ---
 
 {# <h1>Latest 3 Posts</h1> #}
+<center class="hero-section">
+<div class="hero-tagline">I'm Lecturer</div>
+<div class="hero-title">Thada Wangthammang</div>
+<p>Welcome to my personal archive. You can find almost stuff about me - blog posts, resume, projects, contact infomation, and more.</p>
+</center>
 
-<div class="page-section-header">I'm lecturer</div>
+<hr>
 
-
-<div class="row resume-summary">
-  <div class="col-sm resume-profile-col">
-    <div style="margin: 0 auto; width: 200px" class="resume-profile">
-      <img alt="my profile" class="resume-profile" src="{{ site.site_image_prefix }}/my-profile.jpg">
-      <div style="margin-bottom: 2rem;"></div>
-    </div>
-  </div>
-  <div class="col-sm">
-   <p>Hi, I'm Mild or Thada Wangthammang. I live in Hatyai, Songkhla, Thailand. </p>
-      <p>I'm currently lecturer at <a href="https://www.uic.psu.ac.th/about/staff/thada-wangthammang" target="blank">Prince of Songkla University International College (PSUIC), Digital Media Program.</a> I received M.Eng and B.Eng. in 2018 and 2015 from Department of Computer Engineering, Prince of
-      Songkla University (PSU). 
-      I'm enthusiastic to learn about and conduct some research
-      in the areas of cloud technology and distributed and
-      parallel computing, especially, in the area of web technology and game development.</p>
-      <p>I also love to be healthy. <a href="https://connect.garmin.com/modern/profile/6bbc2036-215a-42b6-b8ab-179c7672fabc">Running</a> is my currently exercise. Another happiness is <a href="#photography">photography</a> </p>
- </div>
-
-</div>
-
-<div class="page-section-header">I'm Blogging</div>
+<div class="page-section-header">Latest Posts</div>
 {% set postslist = collections.posts | head(-5) %}
 
 {% include "components/posts-list.njk" %}

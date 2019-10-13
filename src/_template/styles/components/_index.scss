@@ -6,3 +6,20 @@
     font-weight: 600;
     font-family: $headings-font-family;
 }
+
+.hero{
+    &-section{
+        margin: 2rem 0;
+    }
+    &-title{
+      color: black;
+      font-family: $headings-font-family;
+      font-weight: 500;
+      font-size: 2rem;
+      margin-top: -0.8rem;
+      margin-bottom: 1rem;
+    }
+    &-tagline{
+        color: #666;
+    }
+  }
