@@ -1,5 +1,7 @@
 import list from './modules/list'
 
+window.$ = window.jQuery = require("jquery");
+
 // https://www.wdiaz.org/how-to-integrate-fancybox-3-on-ghost/
 function aTagWrap(elem, elemClass, exclude) {
     var imgs = $(elem);
@@ -65,4 +67,22 @@ aTagWrap('.post-container img', 'fancy-box', 'no-fancy-box');
           
             });
 
-console.log(`Hello ${list[0]}`)
+console.log(`Hello ${list[0]}`);
+
+let postViewer = (url) => {
+    // console.log(url);
+    let id = url.replace("/posts/", "");
+    id = id.replace("/", "");
+    // console.log(id);
+    $.get(`https://mildronize-blog-views.now.sh/?id=${id}`)
+        .done(function(response) {
+            $("#viewer").html(`- ${response.total} VIEWS`);
+        });
+};
+
+(function(window){
+
+    window.EntryPoint = {
+        postViewer
+    }
+})(window)

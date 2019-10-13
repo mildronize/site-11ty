@@ -157,6 +157,9 @@ pre{
 // Post Layout
 .post{
   &-title{
+    margin-bottom: 0rem; 
+  }
+  &-date{
     margin-bottom: 2.5rem; 
   }
   &-container {

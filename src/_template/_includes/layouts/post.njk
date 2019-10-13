@@ -3,8 +3,14 @@ layout: base
 templateClass: tmpl-post
 ---
 
- 
  <div class="post-container">
- <h1 class="post-title">{{ title }}</h1>
+  <h1 class="post-title">{{ title }}</h1>
+  <p class="post-date">{{ page.date | readableFullDate }}
+    <span id="viewer"></span>
+  </p> 
   {{ content | safe }}
 </div>
+
+  <script type="text/javascript">
+    EntryPoint.postViewer("{{ page.url }}");
+  </script>
