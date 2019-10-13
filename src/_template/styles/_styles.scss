@@ -9,16 +9,11 @@
 //   color: $font-color;
 // }
 
-.title,
-.logo, .logo a{
-  font-family: $headings-font-family;
-  font-weight: 600;
-  font-size: $h3-font-size;
-  color: #0d47a1;
-}
+
 
 h1, h2, h3, h4, h5, h6{
   margin-top: $headings-margin-top;
+  margin-bottom: $headings-margin-bottom;
 }
 
 li {
@@ -120,3 +115,24 @@ pre{
     padding: .1em;
     border-radius: .3em;
     white-space: normal; }
+
+
+// Post Layout
+.post{
+  &-title{
+    margin-bottom: 2.5rem; 
+  }
+  &-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 740px;
+  }
+
+
+}
+
+
+

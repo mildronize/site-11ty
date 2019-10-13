@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 title: Resume
 permalink: /{{ title | slug }}/index.html
 ---

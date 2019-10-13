@@ -34,25 +34,27 @@ body:lang(th){
 //
 // Style p element.
 
-// $paragraph-margin-bottom:   1rem;
+$paragraph-margin-bottom:   1.2rem;
 
-$line-height-base:            1.7;
+$line-height-base:            1.8;
 $line-height-lg:              2;
 $line-height-sm:              1.25;
 
 // Heading
 // Scale => 1.20
 
-$font-size-base:              1.05rem;
-$h1-font-size:                $font-size-base * 2.074;
-$h2-font-size:                $font-size-base * 1.728;
-$h3-font-size:                $font-size-base * 1.44;
-$h4-font-size:                $font-size-base * 1.266;
-$h5-font-size:                $font-size-base * 1.15;
-$h6-font-size:                $font-size-base;
+// $font-size-base:              1.05rem;
+// $h1-font-size:                $font-size-base * 2.074;
+// $h2-font-size:                $font-size-base * 1.728;
+// $h3-font-size:                $font-size-base * 1.44;
+// $h4-font-size:                $font-size-base * 1.266;
+// $h5-font-size:                $font-size-base * 1.15;
+// $h6-font-size:                $font-size-base;
 
-$headings-margin-top:       1.5rem;     // My styles
-$headings-margin-bottom:     1.5rem;
+
+
+$headings-margin-top:       2.4rem;     // My styles
+$headings-margin-bottom:     1rem;
 
 $headings-font-family :      $font-family-thai;
 $headings-font-weight:       600;
@@ -109,4 +111,12 @@ $container-max-widths: (
 
 // Utilities
 //  @import "node_modules/bootstrap/scss/utilities/api";
+body{
+  font-size: 1.05rem;
+}
 
+@media (min-width: 576px) {
+  body {
+    font-size: 1.2rem;    
+  }
+}

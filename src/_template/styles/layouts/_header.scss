@@ -4,6 +4,14 @@
   }
 }
 
+.title,
+.logo, .logo a{
+  font-family: $headings-font-family;
+  font-weight: 600;
+  font-size: $h4-font-size;
+  color: #0d47a1;
+}
+
 /*!
 * Bootstrap - navbar
 */
@@ -20,4 +28,8 @@
 
 .nav-item {
     margin-bottom: 0;
+}
+
+.nav-link{
+    font-size: 1.05rem;
 }
