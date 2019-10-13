@@ -36,6 +36,7 @@ permalink: /{{ title | slug }}/index.html
 - Thada Wangthammang and Pichaya Tandayya, **"A Software Cache Mechanism for Reducing the OpenTSDB Query Time,"** in proceeding of The 18<sup>th</sup> International Symposium on Communications and Information Technologies (ISCIT 2018), Sukosol Hotel, Bangkok, Thailand, Sep 26 -29, 2018.
 - Thada Wangthammang, Seksun Suwanmanee, Touchai Angchuan and Sangsuree Vasupongayya, **"Registration Assistant Application using Local Search and Tabu List Technique,"** Thaksin University Journal Special Edition for 28<sup>th</sup> National Conference of Thaksin University, 2018.
 
+----
 
 ### Mostly used tools
 - **Active Tools**: Flutter(Dart), Unity(C#)
@@ -45,6 +46,8 @@ permalink: /{{ title | slug }}/index.html
 - **Other tools**: Docker, Memcached, OpenTSDB
 - **[My dotfiles](https://github.com/mildronize/dotfiles)**
 - **Editors**: Vim, VS code
+
+----
 
 ### My contributions
 - 2018 "A Software Cache Mechanism for Reducing the OpenTSDB Query Time," Master Thesis Source code in Computer Engineering. Available on GitHub via <https://github.com/mildronize/tscache> and <https://github.com/mildronize/tscache-docker>. 

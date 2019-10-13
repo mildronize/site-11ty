@@ -12,6 +12,10 @@ image: https://www.dropbox.com/s/lxir9pr41qsc9eu/cover.jpg?raw=1
 toc: true
 ---
 
+
+> Blog นี้เขียนตอนสมัยยังใช้ Jekyll อยู่ ซึ่งสามารถไปดูได้ที่ https://jekyll.mildronize.com/
+
+
 ได้ 99 คะแนนจาก Google Insights & เรียนรู้การทำ web optimization ผ่านการพัฒนาเว็บบล็อกให้ทันสมัย
 จากการพัฒนา [blog version แรก](<https://mildronize.com/notes/my-blog-dev/>)  ซึ่ง clone theme Hyde ของ [Jekyll](https://jekyllrb.com/) มาแล้วปรับแก้มาเรื่อยๆ
 
@@ -28,6 +32,8 @@ toc: true
 > **ดังนั้น** ผมเลยตัดสินใจใช้เทคโนโลยีเก่าหน่อย ที่ยังคงเป็น long term support แต่ก็ยังคงสามารถทำให้ดูทันสมัยได้ และไม่ได้ทำงานช้าด้วยซึ่งก็เหมาะสมกับเว็บบล็อกดี
 
 สุดท้ายก็ตัดสินใจจูน frontend ของบล็อกเดิม ที่เป็น Jekyll ใหม่ให้เป็น Responsive มากขึ้น ทั้งแง่ของ typography ด้วย
+
+----
 
 ## ผลการทดสอบจาก google insights
 จากการทดสอบ google insights ก็ได้ 99 คะแนนบน mobile และ 97 คะแนนบน desktop
@@ -81,6 +87,8 @@ toc: true
 (ตรงนี้จะแชร์ในอีกบล็อกครับ) ซึ่งตรงนี้ใช้บริการแคชรูปของ [Cloudimage.io](https://cloudimage.io/) ซึ่งทำ cache, thumbnail ได้ง่ายมากๆ แถมให้ใช้ฟรี ตั้ง 15 GB ตรงนี้เขียน Plugin ของ Jekyll เข้ามาช่วยในการแปลง img tag ให้เป็นแบบ เบลอก่อนโหลดเสร็จด้วย
 
   ![image-load-blur](https://www.dropbox.com/s/4t30cmbtezs3qbw/2018-09-17-99-score-google-insight-web-optimization-7.gif?raw=1)
+
+----
 
 ## สรุป สิ่งได้เรียนรู้จาก Google Insights
 

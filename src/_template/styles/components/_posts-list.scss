@@ -6,17 +6,20 @@
     &-link{
         color: black;
         font-family: $headings-font-family;
-        font-weight: 600;
-        font-size: 1.15rem;
+        font-weight: 500;
+        font-size: 1.3rem;
     }
     &-first-column{
         flex: 0 0 130px;
         font-size: 0.9rem;
+        padding-top: 0.3rem;
     }
 
     .tag{
-        color: white;
+        color: #999;
         font-weight: normal;
-        padding: 0.1rem;
+        padding: 0.2rem;
+        font-size: 0.7rem;
+        // background-color: white;
     }
 }

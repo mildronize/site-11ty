@@ -6,16 +6,14 @@
       </div>
       <div class="col-sm">
       <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-     
+     <div>
       {% for tag in post.data.tags %}
         {%- if tag != "posts" -%}
         {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <span class="badge badge-secondary">
-          <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-        </span>
+        <a href="{{ tagUrl | url }}" class="tag badge badge-light">{{ tag }}</a>
         {%- endif -%}
       {% endfor %}
-
+      </div>
       {# <hr/> #}
       </div>
     </div>
