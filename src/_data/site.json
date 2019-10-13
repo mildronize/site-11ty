@@ -1,4 +1,5 @@
 {
     "image_prefix": "/static",
-    "site_image_prefix": "/assets"
+    "site_image_prefix": "/assets",
+    "google_analytics_id": "UA-62565035-1"
 }
