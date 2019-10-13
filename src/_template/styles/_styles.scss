@@ -42,22 +42,22 @@ samp {
     border-radius: 50%;
     width:160px;
   }
-  &-summary{
-    padding-top: 1.5rem;
-  }
-  &-card {
-    padding: 0.25rem;
-  }
+  // &-summary{
+  //   padding-top: 1.5rem;
+  // }
+  // &-card {
+  //   padding: 0.25rem;
+  // }
 
-  &-profile-col{
-    flex: 0 0 200px;
-  }
-  &-title {
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #999;
-    font-size: 0.7rem;
-  }
+  // &-profile-col{
+  //   flex: 0 0 200px;
+  // }
+  // &-title {
+  //   font-weight: 600;
+  //   text-transform: uppercase;
+  //   color: #999;
+  //   font-size: 0.7rem;
+  // }
 }
 
 .tag-alpha{
@@ -211,4 +211,8 @@ hr::before {
       opacity: 1;
     }
   }
+}
+
+.page-title{
+  margin-bottom: 3.5rem;
 }

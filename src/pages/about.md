@@ -1,38 +1,20 @@
 ---
 layout: page
-title: Resume
+title: About
 permalink: /{{ title | slug }}/index.html
 ---
 
-<h1>Resume</h1>
+<h1 class="page-title">About Me</h1>
 
-<div class="row resume-summary">
-  <div class="col resume-profile-col">
-    <div style="margin: 0 auto; width: 200px" class="resume-profile">
-      <img alt="my profile" class="resume-profile" src="{{ site.site_image_prefix }}/my-profile.jpg">
-    </div>
-  </div>
-  <div class="col">
-    <div class="resume-card">
-      <div class="resume-title">name</div>
-      <div class="resume-value">Thada Wangthammang</div>
-    </div>
-    <div class="resume-card">
-      <div class="resume-title">Nationality</div>
-      <div class="resume-value">Thai</div>
-    </div>
-    <div class="resume-card">
-      <div class="resume-title">Email</div>
-      <div class="resume-value"><a href="mailto:thada.w@psu.ac.th">thada.w@psu.ac.th</a></div>
-    </div>
-    <div class="resume-card">
-      <div class="resume-title">Job</div>
-      <div class="resume-value">Lecturer at <a href="https://www.uic.psu.ac.th/" target="blank">PSUIC</a></div>
-    </div>
-  </div>
+ <!-- <div style="margin: 0 auto; width: 200px" class="resume-profile">
+    <img alt="my profile" class="resume-profile" src="{{ site.site_image_prefix }}/my-profile.jpg">
+  </div> -->
 
-</div>
-
+ <p>Hi, I'm Mild or Thada Wangthammang. I live in Hatyai, Songkhla, Thailand. </p>
+      <p>I'm currently lecturer at <a href="https://www.uic.psu.ac.th/" target="blank">Prince of Songkla University International College (PSUIC), Digital Media Program.</a> I received M.Eng and B.Eng. in 2018 and 2015 from Department of Computer Engineering, Prince of
+      Songkla University (PSU). I also love to be healthy. <a href="https://connect.garmin.com/modern/profile/6bbc2036-215a-42b6-b8ab-179c7672fabc">Running</a> is my currently exercise. Another happiness is <a href="https://www.flickr.com/photos/mildronize">photography</a> </p>
+    
+<hr>
 
 ### Publications
 - Thada Wangthammang and Pichaya Tandayya, **"A Software Cache Mechanism for Reducing the OpenTSDB Query Time,"** in proceeding of The 18<sup>th</sup> International Symposium on Communications and Information Technologies (ISCIT 2018), Sukosol Hotel, Bangkok, Thailand, Sep 26 -29, 2018.
