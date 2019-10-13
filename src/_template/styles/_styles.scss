@@ -134,5 +134,17 @@ pre{
 
 }
 
-
-
+hr{
+  display: block;
+  text-align: center;
+  border-width: 0px;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  
+}
+hr::before {
+  content: "...";
+  display: inline-block;
+  letter-spacing: 1em;
+  line-height: 1;
+}

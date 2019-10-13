@@ -46,7 +46,6 @@ In React documentation describes [Thinking in React](https://reactjs.org/docs/th
 1. Break the code down to component if you want to reuse the components.
 2. Use High-order Component when necessary.
 
-
 ### Composing components
 
 1. Passing a child as a prop
@@ -58,6 +57,8 @@ In React documentation describes [Thinking in React](https://reactjs.org/docs/th
 5. Using  [Redux](https://github.com/reduxjs/redux) , [mobx](https://github.com/mobxjs/mobx) for big application
 
 Alternative, you can use MVC approach if you familiar, however, in my opinion using MVC on react.
+
+----
 
 ## Design Patterns and Techniques
 
@@ -184,6 +185,7 @@ class CommentListContainer extends React.Component {
 Read more for [Presentational and container components](https://krasimir.gitbooks.io/react-in-patterns/content/chapter-06/), using ref https://github.com/chantastic/react-patterns#container-components
 
 
+----
 
 ### JSX Rendering
 
@@ -245,6 +247,8 @@ class App extends React.Component {
 
 }
 ```
+
+----
 
 ## Composing components
 
@@ -376,7 +380,7 @@ function CounterView({ value }) {
 
 Thanks for [Anas](https://anastue.com/)
 
-
+----
 
 ### Share state between components
 
@@ -392,7 +396,7 @@ Read more how to implement in each state management library in [React State Muse
 
 ### How to choose the composing component pattern?
 
-
+----
 
 ## Style Guide & Naming
 
