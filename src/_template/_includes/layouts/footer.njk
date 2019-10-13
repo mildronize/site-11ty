@@ -6,12 +6,12 @@
      Powered by <a href="https://www.11ty.io">Eleventy</a>
      </div> 
     <div class="footer-user-links">
-        <a class="footer-user-link" href="https://github.com/mildronize"><i class="fab fa-github"></i></a>
-        <a class="footer-user-link" href="https://twitter.com/mildronize"><i class="fab fa-twitter"></i></a>
-        <a class="footer-user-link" href="https://www.linkedin.com/in/thada-wangthammang-281894a6"><i class="fab fa-linkedin"></i></a>
-        <a class="footer-user-link" href="mailto:thada.w@psu.ac.th"><i class="fas fa-envelope"></i></a>
-        <a class="footer-user-link" href="https://medium.com/@mildronize"><i class="fab fa-medium"></i></a>
-        <a class="footer-user-link" href="feed/feed.xml"><i class="fas fa-rss"></i></a>
+       <a class="footer-user-link" href="{{ metadata.contacts.github }}"><i class="fab fa-github"></i></a>
+      <a class="footer-user-link" href="{{ metadata.contacts.twitter }}"><i class="fab fa-twitter"></i></a>
+      <a class="footer-user-link" href="{{ metadata.contacts.linkedin }}"><i class="fab fa-linkedin"></i></a>
+      <a class="footer-user-link" href="mailto:{{ metadata.contacts.email }}"><i class="fas fa-envelope"></i></a>
+      <a class="footer-user-link" href="{{ metadata.contacts.medium }}"><i class="fab fa-medium"></i></a>
+      <a class="footer-user-link" href="{{ metadata.feed_path }}"><i class="fas fa-rss"></i></a>
     </div>
   </center>
 </footer>

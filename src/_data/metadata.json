@@ -3,11 +3,17 @@
   "url": "https://mildronize.com/",
   "keywords": "note, computer, programming, script, knowledge, coding, technique, collection, glossary, data, infomation, internet, web",
   "description": "My notes and interesting things",
-  "feed": {
-    "path": "/feed/feed.xml"
+  "feed_path": "/feed/feed.xml",
+  "contacts": {
+    "twitter": "https://twitter.com/mildronize",
+    "github": "https://github.com/mildronize",
+    "linkedin": "https://www.linkedin.com/in/thada-wangthammang-281894a6",
+    "email": "thada.w@psu.ac.th",
+    "medium": "https://medium.com/@mildronize"
   },
   "author": {
     "name": "Thada Wangthammang",
     "email": "thada.w@psu.ac.th"
   }
 }
+
