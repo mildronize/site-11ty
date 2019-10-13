@@ -39,7 +39,7 @@ toc: true
 จากการทดสอบ google insights ก็ได้ 99 คะแนนบน mobile และ 97 คะแนนบน desktop
 
 - ![99 score on Mobile](https://www.dropbox.com/s/2irrnt11wei4aq7/2018-09-17-99-score-google-insight-web-optimization-3.jpg?raw=1) {.col-md}
-- ![97 score on Desktop](https://www.dropbox.com/s/k6ib5pfgunc6dr0/2018-09-17-99-score-google-insight-web-optimization-4.jpg?raw=1)) {.col-md}
+- ![97 score on Desktop](https://www.dropbox.com/s/k6ib5pfgunc6dr0/2018-09-17-99-score-google-insight-web-optimization-4.jpg?raw=1) {.col-md}
 {.row .two-columns}
 
 ## ปรับปรุงเว็บเทคโนโลยีเก่าให้ทันสมัย
