@@ -7,6 +7,8 @@
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ renderData.description or description or metadata.description }}">
+  <meta name="keywords" content="{{metadata.keywords}}">
+  <meta name="author" content="{{metadata.author.name}}">
   <title>{{ renderData.title or title or metadata.title }}</title>
   <link rel="stylesheet" href="/styles/index.css">
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
@@ -18,7 +20,7 @@
   {% include "layouts/header.njk" %}
   
   {{ content | safe }}
-  
+
 {% include "layouts/footer.njk" %}
 
   <!-- Optional JavaScript -->

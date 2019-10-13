@@ -1,16 +1,13 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://myurl.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "Mildronize's blog",
+  "url": "https://mildronize.com/",
+  "keywords": "note, computer, programming, script, knowledge, coding, technique, collection, glossary, data, infomation, internet, web",
+  "description": "My notes and interesting things",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
-    "filename": "feed.xml",
-    "path": "/feed/feed.xml",
-    "url": "https://myurl.com/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "path": "/feed/feed.xml"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com"
+    "name": "Thada Wangthammang",
+    "email": "thada.w@psu.ac.th"
   }
 }
