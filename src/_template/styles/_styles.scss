@@ -1,13 +1,13 @@
 
 @import "font-prompt.scss";
 
-$var: white;
+// $font-color: #363636;
 
 // General
 
-body {
-  background-color: $var;
-}
+// body {
+//   color: $font-color;
+// }
 
 .title,
 .logo, .logo a{
@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6{
 
 li {
   margin-bottom: 0.35rem;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }
 
 // Resume Page

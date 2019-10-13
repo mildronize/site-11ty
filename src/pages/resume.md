@@ -7,7 +7,7 @@ permalink: /{{ title | slug }}/index.html
 <div class="row resume-summary">
   <div class="col-6 col-md-4">
     <div style="margin: 0 auto; width: 200px" class="resume-profile">
-      <img alt="my profile" class="resume-profile" src="{{ site.image_prefix }}/my-profile.jpg">
+      <img alt="my profile" class="resume-profile" src="{{ site.site_image_prefix }}/my-profile.jpg">
     </div>
   </div>
   <div class="col">
