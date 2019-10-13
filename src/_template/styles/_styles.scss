@@ -155,3 +155,13 @@ hr::before {
   letter-spacing: 1em;
   line-height: 1;
 }
+
+// Required bootstrap >= 4.0
+.two-columns{
+  margin-left: 0; margin-right: 0;
+  list-style-type: none;
+  @media (min-width: 980px) {
+    margin-left: -12rem; margin-right: -12rem;
+  }
+  margin: 2rem 0;
+}
