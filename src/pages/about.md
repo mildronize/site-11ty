@@ -14,6 +14,19 @@ permalink: /{{ title | slug }}/index.html
       <p>I'm currently lecturer at <a href="https://www.uic.psu.ac.th/" target="blank">Prince of Songkla University International College (PSUIC), Digital Media Program.</a> I received M.Eng and B.Eng. in 2018 and 2015 from Department of Computer Engineering, Prince of
       Songkla University (PSU). I also love to be healthy. <a href="https://connect.garmin.com/modern/profile/6bbc2036-215a-42b6-b8ab-179c7672fabc">Running</a> is my currently exercise. Another happiness is <a href="https://www.flickr.com/photos/mildronize">photography</a> </p>
     
+### Contact
+<ul class="about-contact">
+  <li>
+    <a class="about-user-link" href="mailto:{{ metadata.contacts.email }}"><i class="fas fa-envelope"></i><span class="about-user-link-title">Email</span></a>
+  </li>
+  <li>
+    <a class="about-user-link" href="{{ metadata.contacts.github }}"><i class="fab fa-github"></i><span class="about-user-link-title">Github</span></a>
+  </li>
+  <li>
+    <a class="about-user-link" href="{{ metadata.contacts.linkedin }}"><i class="fab fa-linkedin"></i><span class="about-user-link-title">Linkedin</span></a>
+  </li>
+</ul>
+
 <hr>
 
 ### Publications

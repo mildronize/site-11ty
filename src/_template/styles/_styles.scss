@@ -37,11 +37,11 @@ samp {
 
 // Resume Page
 
-.resume{
-  &-profile{
-    border-radius: 50%;
-    width:160px;
-  }
+// .resume{
+//   &-profile{
+//     border-radius: 50%;
+//     width:160px;
+//   }
   // &-summary{
   //   padding-top: 1.5rem;
   // }
@@ -58,6 +58,36 @@ samp {
   //   color: #999;
   //   font-size: 0.7rem;
   // }
+// }
+
+.about{
+  &-user-link{
+    text-decoration: none;
+    color: grey;
+    padding-right: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  &-user-link:hover{
+    text-decoration: none;
+  }
+
+  &-user-link a{
+    text-decoration: none;
+  }
+
+  &-user-link-title{
+    padding: 0.5rem;
+  }
+
+  &-contact {
+    padding: 0;
+  }
+
+  &-contact li{
+    list-style-type: none;
+    display: inline-block;
+  }
 }
 
 .tag-alpha{
