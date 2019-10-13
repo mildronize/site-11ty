@@ -1,0 +1,48 @@
+
+@import "font-prompt.scss";
+
+$var: white;
+
+// General
+
+body {
+  background-color: $var;
+}
+
+.title,
+.logo, .logo a{
+  font-family: $headings-font-family;
+  font-weight: 400;
+  font-size: $h3-font-size;
+  color: #0d47a1;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-top: $headings-margin-top;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+// Resume Page
+
+.resume{
+  &-profile{
+    border-radius: 50%;
+    width:160px;
+  }
+  &-summary{
+    padding: 1.5rem 0;
+  }
+  &-card {
+    padding: 0.25rem;
+  }
+  &-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999;
+    font-size: 0.7rem;
+  }
+}
+

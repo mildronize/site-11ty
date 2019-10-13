@@ -6,8 +6,8 @@ permalink: /{{ title | slug }}/index.html
 
 <div class="row resume-summary">
   <div class="col-6 col-md-4">
-    <div style="margin: 0 auto; width: 200px" class="profile">
-      <img alt="my profile" class="profile" src="{{ site.image_prefix }}/my-profile.jpg">
+    <div style="margin: 0 auto; width: 200px" class="resume-profile">
+      <img alt="my profile" class="resume-profile" src="{{ site.image_prefix }}/my-profile.jpg">
     </div>
   </div>
   <div class="col">
@@ -52,9 +52,8 @@ Application using Local Search and Tabu List Technique,"** Thaksin University Jo
 ### My contributions
 - 2018 "A Software Cache Mechanism for Reducing the OpenTSDB Query Time," Master Thesis Source code in Computer
 Engineering. Available on GitHub via <https://github.com/mildronize/tscache> and
-  <https://github.com/mildronize/tscache-docker>. - 2016 [Submitted test result of installing
-  ](https://appdb.winehq.org/objectManager.php?sClass=version&iId=33492) [Lingoes dictionary](http://www.lingoes.net/)
-  on Debian via [Wine](https://www.winehq.org/). -
-  2015 "Registration Assistant Application Using Local Search Technique," Senior Project in Computer Engineering.
-  Available on GitHub via <https://github.com/mildronize/R2ALS> and <https://github.com/mildronize/R2ALS-app>. - 2015
-  [Translated a Vim cheat sheet in Thai](http://vim.rtorr.com/lang/th/).
+<https://github.com/mildronize/tscache-docker>. 
+- 2016 [Submitted test result of installing](https://appdb.winehq.org/objectManager.php?sClass=version&iId=33492) [Lingoes dictionary](http://www.lingoes.net/) on Debian via [Wine](https://www.winehq.org/). 
+- 2015 "Registration Assistant Application Using Local Search Technique," Senior Project in Computer Engineering.
+Available on GitHub via <https://github.com/mildronize/R2ALS> and <https://github.com/mildronize/R2ALS-app>. 
+- 2015 [Translated a Vim cheat sheet in Thai](http://vim.rtorr.com/lang/th/).

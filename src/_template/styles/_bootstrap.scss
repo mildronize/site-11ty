@@ -7,19 +7,49 @@
 
 // Configuration
 
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/utilities";
+// Typo
+@import "font-prompt.scss";
 
+// Paragraphs
+//
+// Style p element.
 
+// $paragraph-margin-bottom:   1rem;
+
+$line-height-base:            1.7;
+$line-height-lg:              2;
+$line-height-sm:              1.25;
+
+// Heading
+// Scale => 1.20
+$font-size-base: 1rem;
+$h1-font-size:                $font-size-base * 2.074;
+$h2-font-size:                $font-size-base * 1.728;
+$h3-font-size:                $font-size-base * 1.44;
+$h4-font-size:                $font-size-base * 1.266;
+$h5-font-size:                $font-size-base * 1.15;
+$h6-font-size:                $font-size-base;
+
+$headings-margin-top:       1.5rem;     // My styles
+$headings-margin-bottom:     1.5rem;
+
+$headings-font-family :      "Prompt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-weight:       600;
+// $headings-line-height;
+
+// Container
 $container-max-widths: (
   sm: 540px,
-  md: 540px,
+  md: 660px,
   lg: 720px,
   xl: 960px
 );
 
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
 
 // Layout & components
 
@@ -58,6 +88,7 @@ $container-max-widths: (
 
 // Utilities
 //  @import "node_modules/bootstrap/scss/utilities/api";
+
 
 
 
