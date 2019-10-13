@@ -1,0 +1,23 @@
+<div reversed class="postlist" style="counter-reset: start-from {{ postslist.length + 1 }}">
+{% for post in postslist | reverse %}
+  <div class="row postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+      <div class="col postlist-first-column" style="width: 130px;">
+        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDateYearMonthDate }}</time>
+      </div>
+      <div class="col">
+      <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+     
+      {% for tag in post.data.tags %}
+        {%- if tag != "posts" -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <span class="badge badge-secondary">
+          <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+        </span>
+        {%- endif -%}
+      {% endfor %}
+
+      {# <hr/> #}
+      </div>
+    </div>
+{% endfor %}
+</div>

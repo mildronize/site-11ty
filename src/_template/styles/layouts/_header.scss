@@ -1,0 +1,18 @@
+.header {
+  &-offset-bottom {
+    margin-bottom: 100px;
+  }
+}
+
+/*!
+* Bootstrap - navbar
+*/
+
+.navbar {
+  z-index: 100 !important;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  -webkit-box-shadow: 0 2px 4px 2px hsla(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 2px 4px 2px hsla(0, 0, 0, 0.04);
+  box-shadow: 0 2px 4px 2px hsla(0, 0, 0, 0.04);
+}

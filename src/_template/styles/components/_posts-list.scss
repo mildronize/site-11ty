@@ -1,0 +1,22 @@
+.postlist{
+    &-item{
+        margin: 2rem 0;
+    }   
+
+    &-link{
+        color: black;
+        font-family: $headings-font-family;
+        font-weight: 600;
+        font-size: 1.05rem;
+    }
+    &-first-column{
+        flex: 0 0 130px;
+        font-size: 0.9rem;
+    }
+
+    .tag{
+        color: white;
+        font-weight: normal;
+        padding: 0.1rem;
+    }
+}

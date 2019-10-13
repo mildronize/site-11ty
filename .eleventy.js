@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
   // Move images to dist folder without processing
-  eleventyConfig.addPassthroughCopy({ "src/_template/images": "images" });
+  eleventyConfig.addPassthroughCopy({ "src/_template/assets": "assets" });
   eleventyConfig.addPassthroughCopy("src/static");
   // Alias `layouts/post.njk` to `post`
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
@@ -20,6 +20,10 @@ module.exports = function(eleventyConfig) {
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  });
+
+  eleventyConfig.addFilter('readableDateYearMonthDate', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy MMM, d');
   });
 
    // Get the first `n` elements of a collection.

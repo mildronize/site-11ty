@@ -1,0 +1,22 @@
+.footer{
+    margin-top: 4rem;
+    font-size: 0.9rem;
+
+    &-user-link{
+        color: #4a4a4a;
+        margin: 8px;
+    }
+
+    &-user-links{
+        margin: 1rem 0;
+    }
+
+    &-info{
+        font-size: 0.7rem;
+    }
+
+    &-build-status{
+        height: 0.9rem;
+        padding-bottom: 0.2rem;
+    }
+}

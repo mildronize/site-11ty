@@ -33,15 +33,12 @@ permalink: /{{ title | slug }}/index.html
 
 
 ### Publications
-- Thada Wangthammang and Pichaya Tandayya, **"A Software Cache Mechanism for Reducing the OpenTSDB Query Time,"** in
-proceeding of The 18<sup>th</sup> International Symposium on Communications and Information Technologies (ISCIT 2018),
-Sukosol Hotel, Bangkok, Thailand, Sep 26 -29, 2018.
-- Thada Wangthammang, Seksun Suwanmanee, Touchai Angchuan and Sangsuree Vasupongayya, **"Registration Assistant
-Application using Local Search and Tabu List Technique,"** Thaksin University Journal Special Edition for
-28<sup>th</sup> National Conference of Thaksin University, 2018.
+- Thada Wangthammang and Pichaya Tandayya, **"A Software Cache Mechanism for Reducing the OpenTSDB Query Time,"** in proceeding of The 18<sup>th</sup> International Symposium on Communications and Information Technologies (ISCIT 2018), Sukosol Hotel, Bangkok, Thailand, Sep 26 -29, 2018.
+- Thada Wangthammang, Seksun Suwanmanee, Touchai Angchuan and Sangsuree Vasupongayya, **"Registration Assistant Application using Local Search and Tabu List Technique,"** Thaksin University Journal Special Edition for 28<sup>th</sup> National Conference of Thaksin University, 2018.
 
 
 ### Mostly used tools
+- **Active Tools**: Flutter(Dart), Unity(C#)
 - **Programming**: Python, C/C++, Java
 - **Frontend web technologies**: React, Bootstrap, Bulma
 - **Databases**: MongoDB, MySQL
@@ -50,9 +47,7 @@ Application using Local Search and Tabu List Technique,"** Thaksin University Jo
 - **Editors**: Vim, VS code
 
 ### My contributions
-- 2018 "A Software Cache Mechanism for Reducing the OpenTSDB Query Time," Master Thesis Source code in Computer
-Engineering. Available on GitHub via <https://github.com/mildronize/tscache> and
-<https://github.com/mildronize/tscache-docker>. 
+- 2018 "A Software Cache Mechanism for Reducing the OpenTSDB Query Time," Master Thesis Source code in Computer Engineering. Available on GitHub via <https://github.com/mildronize/tscache> and <https://github.com/mildronize/tscache-docker>. 
 - 2016 [Submitted test result of installing](https://appdb.winehq.org/objectManager.php?sClass=version&iId=33492) [Lingoes dictionary](http://www.lingoes.net/) on Debian via [Wine](https://www.winehq.org/). 
 - 2015 "Registration Assistant Application Using Local Search Technique," Senior Project in Computer Engineering.
 Available on GitHub via <https://github.com/mildronize/R2ALS> and <https://github.com/mildronize/R2ALS-app>. 

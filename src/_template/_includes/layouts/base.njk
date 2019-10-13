@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/styles/index.css">
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   <!-- Icons -->
-  <link rel="icon" href="/images/favicon.png">
+  <link rel="icon" href="{{ site.site_image_prefix }}/favicon.png">
 </head>
 <body id="top" itemscope itemtype="http://schema.org/WebPage">
   {% include "layouts/header.njk" %}
@@ -19,6 +19,8 @@
   <div class="container">
   {{ content | safe }}
   </div>
+
+{% include "layouts/footer.njk" %}
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -9,7 +9,8 @@
     "src/_template/styles/**/*.scss # npm run styles:dev # reloadcss",
     "src/static/",
     "dist/**/*.html",
-    "src/_template/images/"
+    "src/_template/images/",
+    "src/_template/_includes/**/*.njk"
  ],
  "http2": false,
  "open": false
