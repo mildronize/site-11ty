@@ -19,9 +19,9 @@ toc: true
 ได้ 99 คะแนนจาก Google Insights & เรียนรู้การทำ web optimization ผ่านการพัฒนาเว็บบล็อกให้ทันสมัย
 จากการพัฒนา [blog version แรก](<https://mildronize.com/notes/my-blog-dev/>)  ซึ่ง clone theme Hyde ของ [Jekyll](https://jekyllrb.com/) มาแล้วปรับแก้มาเรื่อยๆ
 
-![old web design](https://www.dropbox.com/s/sqk4d1no2xi4os0/2018-09-17-99-score-google-insight-web-optimization-1.jpg?raw=1)
-
-![new web deisgn](https://www.dropbox.com/s/gt0p9ta4da7t6gs/2018-09-17-99-score-google-insight-web-optimization-2.jpg?raw=1)
+- ![old web design](https://www.dropbox.com/s/sqk4d1no2xi4os0/2018-09-17-99-score-google-insight-web-optimization-1.jpg?raw=1) {.col-md}
+- ![new web deisgn](https://www.dropbox.com/s/gt0p9ta4da7t6gs/2018-09-17-99-score-google-insight-web-optimization-2.jpg?raw=1) {.col-md}
+{.row .two-columns}
 
 ตอนแรกไปลองใช้ [GatsbyJS](https://gatsbyjs.org/) อยู่สักพัก ซึ่งใช้ React ทั้งระบบเลย แต่สุดท้ายก็ย้ายจาก Gatsby กลับมาใช้ Jekyll เหมือนเดิม เท่าที่ลองใช้งานดู Gatsby เร็วกว่าในหลายๆ ด้านเลย ทั้งด้าน dev และ รันขึ้น production เป็น pwa ด้วย
 
@@ -38,9 +38,9 @@ toc: true
 ## ผลการทดสอบจาก google insights
 จากการทดสอบ google insights ก็ได้ 99 คะแนนบน mobile และ 97 คะแนนบน desktop
 
-![99 score on Mobile](https://www.dropbox.com/s/2irrnt11wei4aq7/2018-09-17-99-score-google-insight-web-optimization-3.jpg?raw=1)
-
-![97 score on Mobile](https://www.dropbox.com/s/k6ib5pfgunc6dr0/2018-09-17-99-score-google-insight-web-optimization-4.jpg?raw=1)
+- ![99 score on Mobile](https://www.dropbox.com/s/2irrnt11wei4aq7/2018-09-17-99-score-google-insight-web-optimization-3.jpg?raw=1) {.col-md}
+- ![97 score on Desktop](https://www.dropbox.com/s/k6ib5pfgunc6dr0/2018-09-17-99-score-google-insight-web-optimization-4.jpg?raw=1)) {.col-md}
+{.row .two-columns}
 
 ## ปรับปรุงเว็บเทคโนโลยีเก่าให้ทันสมัย
 
