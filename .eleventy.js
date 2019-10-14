@@ -2,6 +2,8 @@ const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
+const zone = 'Asia/Bangkok';
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -20,15 +22,19 @@ module.exports = function(eleventyConfig) {
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+    return DateTime.fromJSDate(dateObj, {zone}).toFormat('yyyy-LL-dd');
   });
 
   eleventyConfig.addFilter('readableDateYearMonthDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy MMM, d');
+    return DateTime.fromJSDate(dateObj, {zone}).toFormat('yyyy MMM, d');
   });
 
   eleventyConfig.addFilter('readableFullDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('MMMM d, yyyy');
+    return DateTime.fromJSDate(dateObj, {zone}).toFormat('MMMM d, yyyy');
+  });
+
+  eleventyConfig.addShortcode("today", function() {
+    return DateTime.fromJSDate(new Date(), {zone}).toLocaleString(DateTime.DATETIME_FULL);
   });
 
    // Get the first `n` elements of a collection.

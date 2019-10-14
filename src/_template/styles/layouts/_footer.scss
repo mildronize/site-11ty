@@ -13,10 +13,17 @@
 
     &-info{
         font-size: 0.75rem;
+        margin-top:0.3rem;
+    }
+
+    &-build-date{
+        margin-top: -0.25rem;
+        font-size: 0.4rem;
     }
 
     &-build-status{
-        height: 0.9rem;
+        height: 1rem;
         padding-bottom: 0.2rem;
+        padding-top:0.1rem;
     }
 }
