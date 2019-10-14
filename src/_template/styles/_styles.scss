@@ -186,6 +186,19 @@ pre{
   }
 }
 
+// container with Bootstrap navbar
+.navbar>.page-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-light .navbar-toggler{
+  border-color: rgba(0, 0, 0, 0);
+}
+
+// `...` horizental line
 
 hr{
   display: block;
