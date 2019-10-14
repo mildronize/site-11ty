@@ -1,6 +1,6 @@
 {
   "name": "deventy_mildronize",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "An 11ty starter blog with modern tools",
   "main": "index.js",
   "scripts": {
