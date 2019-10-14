@@ -13,4 +13,6 @@ templateClass: tmpl-post
 
   <script type="text/javascript">
     EntryPoint.postViewer("{{ page.url }}");
+    // add fancybox on all image tags
+    EntryPoint.aTagWrap('.post-container img', 'fancy-box', 'no-fancy-box');
   </script>
