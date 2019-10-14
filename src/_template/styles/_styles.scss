@@ -90,6 +90,13 @@ samp {
   }
 }
 
+@keyframes blink{
+  0%{opacity: 0;}
+  10%{opacity: 1;}
+  90%{opacity: 1;}
+  100%{opacity: 0;}
+  }
+
 .tag-alpha{
   background-color: #ffdd57;
   color: rgba(0,0,0,0.7);
@@ -103,9 +110,17 @@ samp {
   padding-left: .75em;
   padding-right: .75em;
   white-space: nowrap;
-  margin-left: 0.7rem;
+  // margin-left: 0.7rem;
   margin-top: 0.1rem;
+  animation: blink 4s linear infinite;
 }
+
+.tag-alpha:hover {
+  text-decoration: none;
+  background-color: #e7c84c;
+  color: rgba(0,0,0,0.7);
+}
+
 
 blockquote p{
   background-color: #f5eac4;

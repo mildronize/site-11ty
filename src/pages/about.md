@@ -57,6 +57,8 @@ Available on GitHub via <https://github.com/mildronize/R2ALS> and <https://githu
 
 ## Blog Development
 
+Welcome to my blog v.3 (New design)
+
 <ul class="about-contact">
 <li>
     <a class="about-user-link" target="_blank" href="https://github.com/mildronize/next"><i class="fab fa-github"></i><span class="about-user-link-title">Source on Github</span></a>
