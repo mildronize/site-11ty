@@ -52,3 +52,40 @@ permalink: /{{ title | slug }}/index.html
 - 2015 "Registration Assistant Application Using Local Search Technique," Senior Project in Computer Engineering.
 Available on GitHub via <https://github.com/mildronize/R2ALS> and <https://github.com/mildronize/R2ALS-app>. 
 - 2015 [Translated a Vim cheat sheet in Thai](http://vim.rtorr.com/lang/th/).
+
+----
+
+## Blog Development
+
+<ul class="about-contact">
+<li>
+    <a class="about-user-link" target="_blank" href="https://github.com/mildronize/next"><i class="fab fa-github"></i><span class="about-user-link-title">Source on Github</span></a>
+  </li>
+</ul>
+
+##### Main Tools
+- [11ty](https://www.11ty.io/) - static site generator, thanks for [Deventy](https://github.com/ianrose/deventy) for good starter project.
+- [Netlify](https://www.netlify.com/) - hosting and deployment tools
+- [Netlify CMS](https://www.netlifycms.org) - CMS for static 
+
+##### Features
+- Viewer counter via [Firebase](https://firebase.google.com/) & [now.sh](now.sh), thanks for [Leerob's post](https://leerob.io/blog/real-time-post-views/)
+- Blurry Load like Medium. Thanks for [
+José's post](https://jmperezperez.com/medium-image-progressive-loading-placeholder/)
+- [FancyBox](https://www.fancyapps.com/fancybox/3/) on `post` layout
+
+##### Web Development Tools
+- [Bootstrap 4](https://getbootstrap.com/)
+- [Sass/SCSS](https://github.com/sass/node-sass)
+- [Webpack](https://webpack.js.org/)
+- [Babel](https://babeljs.io/)
+- [light-server](https://github.com/txchen/light-server)
+- [PostCSS](https://postcss.org/)
+- [CSSnano](https://cssnano.co/)
+- [Autoprefixer](https://github.com/postcss/autoprefixer)
+
+##### Build Status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c4bdd413-2764-44f3-8ba2-ac8326a4971e/deploy-status)](https://app.netlify.com/sites/mildronize/deploys)
+
+The old version? Read [the old site development log](/posts/2015-05-06-my-blog-development/)
