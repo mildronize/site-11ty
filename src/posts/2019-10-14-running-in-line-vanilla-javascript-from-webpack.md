@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Running in-line vanilla javascript from Webpack
+title: Running in-line vanilla javascript from Webpack & using jQuery in Webpack
 tags:	
 - webpack
 - vanilla
 - javascript
+- jquery
 
 language: en
 ---
@@ -59,7 +60,7 @@ let hello = (name) => {
 })(window)
 ```
 
-3. Implment in the HTML file
+3. Implement in the HTML file
 
 ```html
 <h1 id="hello-text"></h1>
