@@ -166,7 +166,10 @@ pre{
 :not(pre) > code{
     padding: .1em;
     border-radius: .3em;
-    white-space: normal; }
+    white-space: normal; 
+    color: #282a36;
+    background: #eee;
+  }
 
 
 // Post Layout

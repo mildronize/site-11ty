@@ -26,6 +26,11 @@ Added Feature:
 - [FancyBox](https://www.fancyapps.com/fancybox/3/) on `post` layout
 - Burry Load image when image is loading
 
+## Todo
+
+- [ ] Reduce relation between `template` and `content`
+- [ ] Add Search
+
 ## File Structure
 
 ```
